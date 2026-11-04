@@ -1,0 +1,144 @@
+body{
+    background-color: #ede3de;
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style:normal;
+	font-size:30px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    flex-wrap:wrap;
+    height: 50px; 
+    background-color: #3B1F14;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    font-family: "Fredoka", sans-serif;
+}
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+nav a:hover{
+    color:#D35400;
+}
+.about img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+section{
+    padding: 25px;
+}
+section>p{
+    font-family: "Fredoka", sans-serif;
+}
+section h1,p{
+    text-align: center;
+    font-family: "Charis SIL", serif;
+}
+.card{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.menu_card{
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.menu{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    background:white;
+    padding:10px;
+    border-radius:8px;
+}
+.menu img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:8px;
+}
+.main_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_menu>p{
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+	font-size: 20px;
+	color: #572707;
+}
+.card_title{
+	font-size: 20px;
+}
+.card_title p{
+	color: #D35400;
+}
+footer{
+    height: 50px;
+    background-color: #3B1F14;
+    color: white;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+    }
+
+    nav{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .main_menu{
+        width:100%;
+        max-width:400px;
+    }
+
+    .menu{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .menu img{
+        width:80px;
+        height:80px;
+    }
+
+    section h1{
+        font-size:28px;
+    }
+}
